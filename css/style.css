@@ -9,3 +9,29 @@ body {
   margin: 5% 10%;
   font-family: Helvetica, Arial, sans-serif;
 }
+
+h1 {
+  text-align: center;
+  padding: 30px;
+  color: white;
+  background-color: #4a6a95;
+}
+
+#orange-background {
+  padding: 30px;
+  background-color: #feedc8;
+}
+
+#styled-button {
+  border: solid 2px;
+  border-color: #fca569;
+  background-color: #fee6b1;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#results {
+  padding: 30px;
+  background-color: #deffd9;
+  margin-top: 30px;
+}

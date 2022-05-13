@@ -21,17 +21,20 @@
     <!-- Link to JS file -->
     <script src="./js/script.js"></script>
     <h1>Displaying a Range of Even Numbers</h1>
-    <h3>Welcome!</h3>
-    <p>Welcome! Input a minimum and maximum number below, and we will display all the even numbers ranging between the minimum and maximum you specify.</p>
-    <h3>Your Input:</h3>
-    <!-- Form for user input -->
-    <form action="javascript:numbersSent()">
-      <label for="min number">Enter a minimum number:</label>
-      <input type="number" step="1" id="min-number" placeholder="Minimum"><br><br>
-      <label for="max number">Enter a maximum number:</label>
-      <input type="number" step="1" id="max-number" placeholder="Maximum"><br><br>
-      <input type="submit" value="Submit Numbers">
-    </form>
+    <!-- Div for light orange background -->
+    <div id="orange-background">
+      <h3>Welcome!</h3>
+      <p>Welcome! Input a minimum and maximum number below, and we will display all the even numbers ranging between the minimum and maximum you specify.</p>
+      <h3>Your Input:</h3>
+      <!-- Form for user input -->
+      <form action="javascript:numbersSent()">
+        <label for="min number">Enter a minimum number:</label>
+        <input type="number" step="1" id="min-number" placeholder="Minimum"><br><br>
+        <label for="max number">Enter a maximum number:</label>
+        <input type="number" step="1" id="max-number" placeholder="Maximum"><br><br>
+        <input type="submit" value="Submit Numbers" id="styled-button">
+      </form>
+    </div>
     <!-- Div for range of numbers to be displayed -->
     <div id="results"></div>
   </body>
