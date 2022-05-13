@@ -7,16 +7,23 @@
 "use strict"
 
 function numbersSent() {
-  //initializing the counter to zero and the message variable to an empty string
-  let counter = 0;
+  //initializing the message variable to an empty string
+  let numbers = "";
   let message = "";
 
   //getting the user values for the minimum and maximum numbers
   let minNumber = parseInt(document.getElementById("min-number").value);
   let maxNumber = parseInt(document.getElementById("max-number").value);
 
-  //using a while loop to display all the even numbers between the minimum and maximum numbers
+  //initializing the counter variable to the minNumber
+  let counter = minNumber;
+  
+  //number % 2 == 0 gets makes sure remainder is 0, indicating that number is divisible by 2 (even number)
   while ((counter >= minNumber) && (counter <= maxNumber)) {
-    //number % 2 == 0
+    counter = counter + 1;
+    if ((counter <= maxNumber) && (counter % 2 == 0)) {
+      numbers = numbers + counter + "<br>";
+    }
   }
+  document.getElementById("results").innerHTML = numbers;
 }
